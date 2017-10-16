@@ -1,0 +1,867 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wiper
+LIBS:elektra-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SW_DPDT_x2 SW1
+U 1 1 59CD7DD8
+P 1500 5250
+F 0 "SW1" H 1500 5420 50  0000 C CNN
+F 1 "Remdrukschakelaar" H 1500 5050 50  0000 C CNN
+F 2 "knipper:AMP63824-2" H 1500 5250 50  0001 C CNN
+F 3 "" H 1500 5250 50  0001 C CNN
+	1    1500 5250
+	1    0    0    -1  
+$EndComp
+Text Label 3550 5350 0    60   ~ 0
+REVERSE
+$Comp
+L SW_DPDT_x2 SW4
+U 1 1 59CDDF58
+P 1500 900
+F 0 "SW4" H 1500 1070 50  0000 C CNN
+F 1 "LIGHTSWITCH" H 1500 700 50  0000 C CNN
+F 2 "" H 1500 900 50  0001 C CNN
+F 3 "" H 1500 900 50  0001 C CNN
+	1    1500 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_DPDT_x2 SW3
+U 1 1 59CE018D
+P 1500 3900
+F 0 "SW3" H 1500 4070 50  0000 C CNN
+F 1 "GROOTLICHT" H 1500 3700 50  0000 C CNN
+F 2 "" H 1500 3900 50  0001 C CNN
+F 3 "" H 1500 3900 50  0001 C CNN
+	1    1500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_DPDT_x2 SW2
+U 1 1 59CE1BB5
+P 1500 3100
+F 0 "SW2" H 1500 3270 50  0000 C CNN
+F 1 "BINNENLICHT" H 1500 2900 50  0000 C CNN
+F 2 "" H 1500 3100 50  0001 C CNN
+F 3 "" H 1500 3100 50  0001 C CNN
+	1    1500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_DPDT_x2 SW6
+U 1 1 59CE2FC5
+P 8250 2100
+F 0 "SW6" H 8250 2270 50  0000 C CNN
+F 1 "WIPER-SWITCH" H 8250 1900 50  0000 C CNN
+F 2 "" H 8250 2100 50  0001 C CNN
+F 3 "" H 8250 2100 50  0001 C CNN
+	1    8250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_DPDT_x2 SW7
+U 1 1 59CEA9CC
+P 1500 4500
+F 0 "SW7" H 1500 4670 50  0000 C CNN
+F 1 "ALARM-SWITCH" H 1600 4300 50  0000 C CNN
+F 2 "" H 1500 4500 50  0001 C CNN
+F 3 "" H 1500 4500 50  0001 C CNN
+	1    1500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lamp CABINLIGHT
+U 1 1 59CD8291
+P 2300 3200
+F 0 "CABINLIGHT" V 2450 3150 50  0000 L CNN
+F 1 "Cabineverlichting" V 2150 3050 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 2300 3300 50  0001 C CNN
+F 3 "" V 2300 3300 50  0001 C CNN
+	1    2300 3200
+	0    1    1    0   
+$EndComp
+Text Label 2650 3200 2    60   ~ 0
+GND
+Text Label 1800 3200 0    60   ~ 0
+CABINE+
+$Comp
+L Lamp LA?
+U 1 1 59CDA912
+P 4050 5350
+F 0 "LA?" V 4200 5300 50  0000 L CNN
+F 1 "Achteruitrijlicht Links" V 3900 5200 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 4050 5450 50  0001 C CNN
+F 3 "" V 4050 5450 50  0001 C CNN
+	1    4050 5350
+	0    1    1    0   
+$EndComp
+Text Label 4400 5350 2    60   ~ 0
+GND
+$Comp
+L Lamp LA?
+U 1 1 59CDAD1B
+P 4050 5750
+F 0 "LA?" V 4200 5700 50  0000 L CNN
+F 1 "Achteruitrijlicht Rechts" V 3900 5600 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 4050 5850 50  0001 C CNN
+F 3 "" V 4050 5850 50  0001 C CNN
+	1    4050 5750
+	0    1    1    0   
+$EndComp
+Text Label 4400 5750 2    60   ~ 0
+GND
+$Comp
+L Lamp LA?
+U 1 1 59CDD6A1
+P 2300 5350
+F 0 "LA?" V 2450 5300 50  0000 L CNN
+F 1 "Remlicht links" V 2150 5200 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 2300 5450 50  0001 C CNN
+F 3 "" V 2300 5450 50  0001 C CNN
+	1    2300 5350
+	0    1    1    0   
+$EndComp
+Text Label 2650 5350 2    60   ~ 0
+GND
+Text Label 1750 5350 0    60   ~ 0
+BREAK_L+
+$Comp
+L Lamp LA?
+U 1 1 59CDDBAE
+P 2300 5750
+F 0 "LA?" V 2450 5700 50  0000 L CNN
+F 1 "Remlicht rechts" V 2150 5600 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 2300 5850 50  0001 C CNN
+F 3 "" V 2300 5850 50  0001 C CNN
+	1    2300 5750
+	0    1    1    0   
+$EndComp
+Text Label 2650 5750 2    60   ~ 0
+GND
+Text Label 1750 5750 0    60   ~ 0
+BREAK_R+
+$Comp
+L Lamp LA?
+U 1 1 59CDF644
+P 6000 5350
+F 0 "LA?" V 6150 5300 50  0000 L CNN
+F 1 "Knipper linksachter" V 5850 5200 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 6000 5450 50  0001 C CNN
+F 3 "" V 6000 5450 50  0001 C CNN
+	1    6000 5350
+	0    1    1    0   
+$EndComp
+Text Label 6350 5350 2    60   ~ 0
+GND
+$Comp
+L Lamp LA?
+U 1 1 59CDFB7B
+P 5200 5350
+F 0 "LA?" V 5350 5300 50  0000 L CNN
+F 1 "Knipper rechtsachter" V 5050 5200 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 5200 5450 50  0001 C CNN
+F 3 "" V 5200 5450 50  0001 C CNN
+	1    5200 5350
+	0    1    1    0   
+$EndComp
+Text Label 5550 5350 2    60   ~ 0
+GND
+$Comp
+L Lamp LA?
+U 1 1 59CE0915
+P 6000 5750
+F 0 "LA?" V 6150 5700 50  0000 L CNN
+F 1 "Knipper linksvoor" V 5850 5600 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 6000 5850 50  0001 C CNN
+F 3 "" V 6000 5850 50  0001 C CNN
+	1    6000 5750
+	0    1    1    0   
+$EndComp
+Text Label 6350 5750 2    60   ~ 0
+GND
+$Comp
+L Lamp LA?
+U 1 1 59CE091F
+P 5200 5750
+F 0 "LA?" V 5350 5700 50  0000 L CNN
+F 1 "Knipper rechtsvoor" V 5050 5600 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 5200 5850 50  0001 C CNN
+F 3 "" V 5200 5850 50  0001 C CNN
+	1    5200 5750
+	0    1    1    0   
+$EndComp
+Text Label 5550 5750 2    60   ~ 0
+GND
+$Comp
+L Lamp BEAM_L
+U 1 1 59CE2A03
+P 2300 3600
+F 0 "BEAM_L" V 2450 3550 50  0000 L CNN
+F 1 "Grootlicht links" V 2150 3450 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 2300 3700 50  0001 C CNN
+F 3 "" V 2300 3700 50  0001 C CNN
+	1    2300 3600
+	0    1    1    0   
+$EndComp
+Text Label 2650 3600 2    60   ~ 0
+GND
+$Comp
+L Lamp BEAM_R
+U 1 1 59CE2A0D
+P 2300 4000
+F 0 "BEAM_R" V 2450 3950 50  0000 L CNN
+F 1 "Grootlicht rechts" V 2150 3850 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 2300 4100 50  0001 C CNN
+F 3 "" V 2300 4100 50  0001 C CNN
+	1    2300 4000
+	0    1    1    0   
+$EndComp
+Text Label 2650 4000 2    60   ~ 0
+GND
+Text Label 1800 4000 0    60   ~ 0
+BEAM+
+$Comp
+L Lamp DIM_L
+U 1 1 59CE2A17
+P 2300 1200
+F 0 "DIM_L" V 2450 1150 50  0000 L CNN
+F 1 "Dimlicht links" V 2150 1050 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 2300 1300 50  0001 C CNN
+F 3 "" V 2300 1300 50  0001 C CNN
+	1    2300 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Lamp DIM_R
+U 1 1 59CE2A21
+P 2300 2000
+F 0 "DIM_R" V 2450 1950 50  0000 L CNN
+F 1 "Dimlicht rechts" V 2150 1850 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 2300 2100 50  0001 C CNN
+F 3 "" V 2300 2100 50  0001 C CNN
+	1    2300 2000
+	0    1    1    0   
+$EndComp
+Text Label 1850 1200 0    60   ~ 0
+LIGHT+
+$Comp
+L Lamp CITY_L
+U 1 1 59CE36A0
+P 2300 800
+F 0 "CITY_L" V 2450 750 50  0000 L CNN
+F 1 "Stadslicht links" V 2150 650 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 2300 900 50  0001 C CNN
+F 3 "" V 2300 900 50  0001 C CNN
+	1    2300 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Lamp CITY_R
+U 1 1 59CE36AA
+P 2300 1600
+F 0 "CITY_R" V 2450 1550 50  0000 L CNN
+F 1 "Stadslicht rechts" V 2150 1450 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 2300 1700 50  0001 C CNN
+F 3 "" V 2300 1700 50  0001 C CNN
+	1    2300 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Lamp CITY_L
+U 1 1 59CE36B4
+P 2300 2400
+F 0 "CITY_L" V 2450 2350 50  0000 L CNN
+F 1 "Achterlicht links" V 2150 2250 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 2300 2500 50  0001 C CNN
+F 3 "" V 2300 2500 50  0001 C CNN
+	1    2300 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Lamp TAIL_R
+U 1 1 59CE36BE
+P 2300 2800
+F 0 "TAIL_R" V 2450 2750 50  0000 L CNN
+F 1 "Achterlicht rechts" V 2150 2650 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 2300 2900 50  0001 C CNN
+F 3 "" V 2300 2900 50  0001 C CNN
+	1    2300 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Fuse F?
+U 1 1 59D0A814
+P 1000 900
+F 0 "F?" V 1080 900 50  0000 C CNN
+F 1 "Fuse" V 925 900 50  0000 C CNN
+F 2 "" V 930 900 50  0001 C CNN
+F 3 "" H 1000 900 50  0001 C CNN
+	1    1000 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 59D0A947
+P 600 850
+F 0 "#PWR?" H 600 700 50  0001 C CNN
+F 1 "VCC" H 600 1000 50  0000 C CNN
+F 2 "" H 600 850 50  0001 C CNN
+F 3 "" H 600 850 50  0001 C CNN
+	1    600  850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fuse F?
+U 1 1 59D0D40A
+P 1000 3100
+F 0 "F?" V 1080 3100 50  0000 C CNN
+F 1 "Fuse" V 925 3100 50  0000 C CNN
+F 2 "" V 930 3100 50  0001 C CNN
+F 3 "" H 1000 3100 50  0001 C CNN
+	1    1000 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 5350 3550 5350
+Wire Wire Line
+	3550 5350 3850 5350
+Wire Wire Line
+	2500 3200 2650 3200
+Wire Wire Line
+	1700 3200 2100 3200
+Wire Wire Line
+	4250 5350 4400 5350
+Wire Wire Line
+	4400 5750 4250 5750
+Wire Wire Line
+	3850 5750 3550 5750
+Wire Wire Line
+	2500 5350 2650 5350
+Wire Wire Line
+	1700 5350 1750 5350
+Wire Wire Line
+	1750 5350 2100 5350
+Wire Wire Line
+	2500 5750 2650 5750
+Wire Wire Line
+	1750 5750 2100 5750
+Wire Wire Line
+	6200 5350 6350 5350
+Wire Wire Line
+	5400 5350 5550 5350
+Wire Wire Line
+	6350 5750 6200 5750
+Wire Wire Line
+	5550 5750 5400 5750
+Wire Wire Line
+	2500 3600 2650 3600
+Wire Wire Line
+	2100 3600 1800 3600
+Wire Wire Line
+	2500 4000 2650 4000
+Wire Wire Line
+	1700 4000 1800 4000
+Wire Wire Line
+	1800 4000 2100 4000
+Wire Wire Line
+	2500 2400 2650 2400
+Wire Wire Line
+	1800 2400 2100 2400
+Wire Wire Line
+	2650 2800 2500 2800
+Wire Wire Line
+	1800 2800 2100 2800
+Wire Wire Line
+	2500 800  2650 800 
+Wire Wire Line
+	2100 800  1800 800 
+Wire Wire Line
+	2650 1200 2500 1200
+Wire Wire Line
+	1800 1200 2100 1200
+Wire Wire Line
+	2500 1600 2650 1600
+Wire Wire Line
+	1800 1600 2100 1600
+Wire Wire Line
+	2650 2000 2500 2000
+Wire Wire Line
+	1800 2000 2100 2000
+Wire Wire Line
+	600  900  850  900 
+Wire Wire Line
+	1150 900  1300 900 
+Wire Wire Line
+	1700 1000 1800 1000
+Wire Wire Line
+	1800 800  1800 1000
+Wire Wire Line
+	1800 1000 1800 1200
+Wire Wire Line
+	1800 1200 1800 1600
+Wire Wire Line
+	1800 1600 1800 2000
+Wire Wire Line
+	1800 2000 1800 2400
+Wire Wire Line
+	1800 2400 1800 2800
+Connection ~ 1800 1000
+Connection ~ 1800 1200
+Connection ~ 1800 1600
+Connection ~ 1800 2000
+Connection ~ 1800 2400
+Wire Wire Line
+	600  3100 850  3100
+Connection ~ 600  900 
+Wire Wire Line
+	1150 3100 1200 3100
+Wire Wire Line
+	1200 3100 1300 3100
+$Comp
+L Fuse F?
+U 1 1 59D0F832
+P 1050 3900
+F 0 "F?" V 1130 3900 50  0000 C CNN
+F 1 "Fuse" V 975 3900 50  0000 C CNN
+F 2 "" V 980 3900 50  0001 C CNN
+F 3 "" H 1050 3900 50  0001 C CNN
+	1    1050 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	600  3900 900  3900
+Connection ~ 600  3100
+Wire Wire Line
+	1200 3900 1300 3900
+Wire Wire Line
+	1800 3600 1800 4000
+Connection ~ 1800 4000
+$Comp
+L Fuse F?
+U 1 1 59D1338E
+P 7700 1850
+F 0 "F?" V 7780 1850 50  0000 C CNN
+F 1 "Fuse" V 7625 1850 50  0000 C CNN
+F 2 "" V 7630 1850 50  0001 C CNN
+F 3 "" H 7700 1850 50  0001 C CNN
+	1    7700 1850
+	0    1    1    0   
+$EndComp
+Connection ~ 600  3900
+$Comp
+L SW_DPDT_x2 SW?
+U 1 1 59D13B23
+P 8250 2700
+F 0 "SW?" H 8250 2870 50  0000 C CNN
+F 1 "HORN-SWITCH" H 8250 2500 50  0000 C CNN
+F 2 "" H 8250 2700 50  0001 C CNN
+F 3 "" H 8250 2700 50  0001 C CNN
+	1    8250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fuse F?
+U 1 1 59D1687B
+P 1050 4500
+F 0 "F?" V 1130 4500 50  0000 C CNN
+F 1 "Fuse" V 975 4500 50  0000 C CNN
+F 2 "" V 980 4500 50  0001 C CNN
+F 3 "" H 1050 4500 50  0001 C CNN
+	1    1050 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	600  4500 900  4500
+Wire Wire Line
+	1200 4500 1250 4500
+Wire Wire Line
+	1250 4500 1300 4500
+Wire Wire Line
+	1700 4600 2650 4600
+Text Label 2350 4600 2    60   ~ 0
+ALARM
+Wire Wire Line
+	1250 4500 1250 4900
+Wire Wire Line
+	1250 4900 1250 5250
+Wire Wire Line
+	1250 4900 2650 4900
+Connection ~ 1250 4500
+Text Label 1800 4900 2    60   ~ 0
+DIR+
+Wire Wire Line
+	5750 5750 5800 5750
+Wire Wire Line
+	5750 4850 5750 5350
+Wire Wire Line
+	5750 5350 5750 5750
+Wire Wire Line
+	5750 5350 5800 5350
+Connection ~ 5750 5350
+Wire Wire Line
+	4950 5350 5000 5350
+Wire Wire Line
+	4950 5750 5000 5750
+Connection ~ 4950 5350
+Wire Wire Line
+	1750 5350 1750 5750
+Connection ~ 1750 5350
+Wire Wire Line
+	3550 5750 3550 5350
+Connection ~ 3550 5350
+$Comp
+L SW_DPDT_x2 SW?
+U 1 1 59D0EA41
+P 8450 5500
+F 0 "SW?" H 8450 5670 50  0000 C CNN
+F 1 "24V MassaSleutel" H 8450 5300 50  0000 C CNN
+F 2 "" H 8450 5500 50  0001 C CNN
+F 3 "" H 8450 5500 50  0001 C CNN
+	1    8450 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 5600 9000 5600
+Wire Wire Line
+	6750 5500 8250 5500
+Text Label 7550 5500 0    60   ~ 0
+BATT_GND
+Text Label 8950 5600 2    60   ~ 0
+GND
+$Comp
+L Screw_Terminal_01x03 J?
+U 1 1 59D12860
+P 2850 4700
+F 0 "J?" H 2850 4900 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 2850 4500 50  0000 C CNN
+F 2 "" H 2850 4700 50  0001 C CNN
+F 3 "" H 2850 4700 50  0001 C CNN
+	1    2850 4700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2650 4900 2650 4800
+Wire Wire Line
+	2650 4700 2150 4700
+Text Label 2150 4700 0    60   ~ 0
+GND
+$Comp
+L Screw_Terminal_01x02 J?
+U 1 1 59D13483
+P 3150 5350
+F 0 "J?" H 3150 5450 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 3150 5150 50  0000 C CNN
+F 2 "" H 3150 5350 50  0001 C CNN
+F 3 "" H 3150 5350 50  0001 C CNN
+	1    3150 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5450 4400 5450
+Wire Wire Line
+	4400 5350 4400 5450
+Wire Wire Line
+	4400 5450 4400 5750
+Connection ~ 4400 5450
+$Comp
+L Screw_Terminal_01x02 J?
+U 1 1 59D162EC
+P 4650 4850
+F 0 "J?" H 4650 4950 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 4650 4650 50  0000 C CNN
+F 2 "" H 4650 4850 50  0001 C CNN
+F 3 "" H 4650 4850 50  0001 C CNN
+	1    4650 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_01x02 J?
+U 1 1 59D16422
+P 5500 4850
+F 0 "J?" H 5500 4950 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 5500 4650 50  0000 C CNN
+F 2 "" H 5500 4850 50  0001 C CNN
+F 3 "" H 5500 4850 50  0001 C CNN
+	1    5500 4850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4950 4850 5550
+Wire Wire Line
+	4850 5550 5550 5550
+Wire Wire Line
+	5550 5350 5550 5550
+Wire Wire Line
+	5550 5550 5550 5750
+Connection ~ 5550 5550
+Wire Wire Line
+	4950 4850 4950 5350
+Wire Wire Line
+	4950 5350 4950 5750
+Wire Wire Line
+	4950 4850 4850 4850
+Wire Wire Line
+	5700 4950 5700 5550
+Wire Wire Line
+	5700 5550 6350 5550
+Wire Wire Line
+	6350 5350 6350 5550
+Wire Wire Line
+	6350 5550 6350 5750
+Connection ~ 6350 5550
+Wire Wire Line
+	5750 4850 5700 4850
+Wire Wire Line
+	2650 800  2650 1000
+Wire Wire Line
+	2650 1000 2650 1200
+Wire Wire Line
+	2650 1600 2650 1800
+Wire Wire Line
+	2650 1800 2650 2000
+Wire Wire Line
+	2650 2400 2650 2600
+Wire Wire Line
+	2650 2600 2650 2800
+Wire Wire Line
+	2650 1000 3050 1000
+Wire Wire Line
+	3050 1000 3050 1800
+Wire Wire Line
+	3050 1800 3050 2600
+Wire Wire Line
+	3050 2600 2650 2600
+Connection ~ 2650 2600
+Connection ~ 2650 1000
+Wire Wire Line
+	2650 1800 3050 1800
+Connection ~ 3050 1800
+Connection ~ 2650 1800
+Text Label 3050 1000 2    60   ~ 0
+GND
+Wire Wire Line
+	600  850  600  900 
+Wire Wire Line
+	600  900  600  3100
+Wire Wire Line
+	600  3100 600  3900
+Wire Wire Line
+	600  3900 600  4500
+Wire Wire Line
+	1250 5250 1300 5250
+Connection ~ 1250 4900
+$Comp
+L Screw_Terminal_01x02 J?
+U 1 1 59D1229E
+P 4400 3550
+F 0 "J?" H 4400 3650 50  0000 C CNN
+F 1 "USB aansluiting" H 4400 3350 50  0000 C CNN
+F 2 "" H 4400 3550 50  0001 C CNN
+F 3 "" H 4400 3550 50  0001 C CNN
+	1    4400 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_01x02 J?
+U 1 1 59D123F9
+P 4400 4050
+F 0 "J?" H 4400 4150 50  0000 C CNN
+F 1 "Radio aansluiting" H 4400 3850 50  0000 C CNN
+F 2 "" H 4400 4050 50  0001 C CNN
+F 3 "" H 4400 4050 50  0001 C CNN
+	1    4400 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lamp CABINLIGHT?
+U 1 1 59D12B9C
+P 3600 3150
+F 0 "CABINLIGHT?" V 3750 3100 50  0000 L CNN
+F 1 "Cabineverlichting achter" V 3450 3000 50  0000 L CNN
+F 2 "knipper:AMP63824-2" V 3600 3250 50  0001 C CNN
+F 3 "" V 3600 3250 50  0001 C CNN
+	1    3600 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L SW_DPDT_x2 SW?
+U 1 1 59D12CD9
+P 3200 3050
+F 0 "SW?" H 3200 3220 50  0000 C CNN
+F 1 "BINNENLICHT" H 3200 2850 50  0000 C CNN
+F 2 "" H 3200 3050 50  0001 C CNN
+F 3 "" H 3200 3050 50  0001 C CNN
+	1    3200 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 3100 1200 3400
+Wire Wire Line
+	1200 3400 2900 3400
+Wire Wire Line
+	2900 3050 2900 3400
+Wire Wire Line
+	2900 3400 2900 3550
+Wire Wire Line
+	2900 3050 3000 3050
+Connection ~ 1200 3100
+Wire Wire Line
+	2900 3550 3900 3550
+Wire Wire Line
+	3900 3550 4200 3550
+Connection ~ 2900 3400
+Wire Wire Line
+	3900 4050 4200 4050
+Wire Wire Line
+	3900 4050 3900 3550
+Connection ~ 3900 3550
+Wire Wire Line
+	3600 4150 4100 4150
+Wire Wire Line
+	4100 4150 4200 4150
+Wire Wire Line
+	4100 4150 4100 3650
+Wire Wire Line
+	4100 3650 4200 3650
+Connection ~ 4100 4150
+Text Label 3600 4150 0    60   ~ 0
+GND
+$Comp
+L HORN H?
+U 1 1 59E4E538
+P 9050 3000
+F 0 "H?" H 9350 2850 60  0000 C CNN
+F 1 "HORN" H 9400 3150 60  0000 C CNN
+F 2 "" H 9050 3000 60  0001 C CNN
+F 3 "" H 9050 3000 60  0001 C CNN
+	1    9050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L WIPER W?
+U 1 1 59E4EAD9
+P 9200 2250
+F 0 "W?" H 9200 2250 60  0000 C CNN
+F 1 "WIPER" H 9200 2500 60  0000 C CNN
+F 2 "" H 9200 2250 60  0001 C CNN
+F 3 "" H 9200 2250 60  0001 C CNN
+	1    9200 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2800 8700 2800
+Wire Wire Line
+	8450 2200 8600 2200
+Wire Wire Line
+	7850 1850 7850 2100
+Wire Wire Line
+	7850 2100 7850 2700
+Wire Wire Line
+	7850 2700 8050 2700
+Wire Wire Line
+	8050 2100 7850 2100
+Connection ~ 7850 2100
+Wire Wire Line
+	8700 3200 8700 3450
+Wire Wire Line
+	9800 2200 9800 2400
+Text Label 8700 3450 2    60   ~ 0
+GND
+Text Label 9800 2400 2    60   ~ 0
+GND
+$Comp
+L 24-12V-Converter U?
+U 1 1 59E565ED
+P 7800 3900
+F 0 "U?" H 7800 3800 60  0000 C CNN
+F 1 "24-12V-Converter" H 7800 4050 60  0000 C CNN
+F 2 "" H 7800 3900 60  0001 C CNN
+F 3 "" H 7800 3900 60  0001 C CNN
+	1    7800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 59E56999
+P 6750 5200
+F 0 "BT?" H 6850 5300 50  0000 L CNN
+F 1 "Battery" H 6850 5200 50  0000 L CNN
+F 2 "" V 6750 5260 50  0001 C CNN
+F 3 "" V 6750 5260 50  0001 C CNN
+	1    6750 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5000 6750 3900
+Wire Wire Line
+	6750 3900 7050 3900
+Wire Wire Line
+	7050 3900 7100 3900
+Wire Wire Line
+	6750 5400 6750 5500
+Text Label 6750 3900 0    60   ~ 0
++24V
+Wire Wire Line
+	8500 3900 9200 3900
+Text Label 600  1150 3    60   ~ 0
++12V
+Text Label 9200 3900 2    60   ~ 0
++12V
+Wire Wire Line
+	9000 5600 9000 4650
+Wire Wire Line
+	9000 4650 7800 4650
+Wire Wire Line
+	7800 4650 7800 4500
+Wire Wire Line
+	7050 3900 7050 1850
+Wire Wire Line
+	7050 1850 7550 1850
+Connection ~ 7050 3900
+$EndSCHEMATC
